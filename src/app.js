@@ -10,6 +10,7 @@ import cartRoutes from "./routes/cart.routes.js";
 import orderRoutes from "./routes/order.routes.js";
 import mlRoutes from "./routes/mlRoutes.js";
 
+
 dotenv.config();
 connectDB();
 
@@ -23,5 +24,6 @@ app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/ml", mlRoutes);
+
 
 export default app;
