@@ -6,7 +6,7 @@ export const recommendProducts = async (req, res) => {
     const { user_id, item_ids, category, fit } = req.body;
 
     const response = await axios.post(
-      "https://ecommerce-recommendation-mdel-1.onrender.com/predict/",
+      "https://ecommerce-recommendation-model-1.onrender.com/predict/",
       { user_id, item_ids, category, fit },
       { timeout: 10000 }
     );
@@ -25,6 +25,9 @@ export const recommendProducts = async (req, res) => {
     });
   }
 };
+
+
+ 
 
 // Forecasting Model
 export const forecastSales = async (req, res) => {
